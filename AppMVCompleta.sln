@@ -4,10 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dev.App", "src\Dev.App\Dev.App.csproj", "{0085522D-68C0-4E9F-B685-938565F1969A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{51D855E3-7181-4A63-8BC0-BAAAF887D117} = {51D855E3-7181-4A63-8BC0-BAAAF887D117}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Business", "src\Dev.Business\Dev.Business.csproj", "{51D855E3-7181-4A63-8BC0-BAAAF887D117}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dev.Business", "src\Dev.Business\Dev.Business.csproj", "{51D855E3-7181-4A63-8BC0-BAAAF887D117}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Data", "src\Dev.Data\Dev.Data.csproj", "{C43EAE34-77B2-4005-BAF3-5A49F9EC4C57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dev.Data", "src\Dev.Data\Dev.Data.csproj", "{C43EAE34-77B2-4005-BAF3-5A49F9EC4C57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

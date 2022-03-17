@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dev.Business.Models
 {
-    class Fornecedor : Entity
+    public class Fornecedor : Entity
     {
         public string Nome { get; set; }
         public string Documento { get; set; }
