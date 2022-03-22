@@ -1,4 +1,6 @@
 using Dev.App.Data;
+using Dev.Business.Interfaces;
+using Dev.Data.Repository;
 using System.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +51,11 @@ namespace Dev.App
                 builder.AddBlobServiceClient(Configuration["TesteNetCore:blob"], preferMsi: true);
                 builder.AddQueueServiceClient(Configuration["TesteNetCore:queue"], preferMsi: true);
             });
+
+            services.AddScoped<MeuDbContext>();
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
